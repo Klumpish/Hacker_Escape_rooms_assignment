@@ -215,27 +215,27 @@ header img {
 	margin-top: 35px;
 }
 
-.hackerPointing {
+.picture {
 	height: 300px;
 	width: 100%;
 }
 /* booking */
-.booking {
+.infoDump {
 	padding-top: 20px;
 	padding-left: 20px;
 }
-.booking span {
+.infoDump span {
 	font-size: 32px;
 	font-family: "Roboto";
 	font-weight: 700;
 }
-.booking p {
+.infoDump p {
 	font-family: "Roboto";
 	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
-.bookingBtn {
+.infoBtn {
 	/* size */
 	width: 308px;
 	height: 66px;
@@ -248,6 +248,32 @@ header img {
 	font-size: 24px;
 	font-weight: 700;
 	font-family: "Roboto";
+}
+
+footer {
+	background-color: rgba(1, 24, 39, 1);
+	height: 566px;
+	padding-left: 22px;
+	padding-top: 22px;
+	/* font */
+	font-family: "Roboto";
+	color: rgba(255, 255, 255, 1);
+}
+footer h3,
+p {
+	font-weight: 700;
+	font-size: 18px;
+}
+footer p {
+	font-weight: 400;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+.lastItem {
+	margin-bottom: 68px;
 }
 
 /* 400 */
