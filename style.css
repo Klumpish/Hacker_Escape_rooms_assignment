@@ -1,0 +1,131 @@
+html {
+	font-family: "Roboto", sans-serif;
+	/* font-size: 24px; */
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+/* parent */
+header {
+	display: flex;
+	background-color: rgba(1, 24, 39, 1);
+	/* size */
+	height: 144px;
+	width: 100%;
+}
+header img {
+	float: left;
+	margin-top: 26px;
+	margin-left: 27px;
+	/* size */
+	width: 128px;
+	height: 82px;
+}
+.logoText {
+	color: white;
+	width: 78px;
+	height: 84px;
+	top: 25px;
+	left: 168px;
+	line-height: 28.13px;
+	font-size: 24px;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+.hackerImg img {
+	width: 100%;
+}
+/* parent */
+.challenges {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.challenges .challengesBtn {
+	display: block;
+	background-color: #8acfe5;
+	border-radius: 5px;
+	border: none;
+	font-size: 24px;
+	/* size */
+	height: 66px;
+	width: 308px;
+}
+.challenges .challengesLink {
+	color: rgba(54, 118, 157, 1);
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-top: 30;
+
+	/* center */
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 129px;
+}
+
+/* parent */
+.quoteFace {
+	display: block;
+}
+.quoteFace img {
+	float: left;
+	margin-top: 25px;
+	margin-left: 21px;
+	padding: 0 20px 80px 0;
+}
+
+.quoteText {
+	font-size: 24px;
+	margin-right: 24px;
+	margin-bottom: 10px;
+}
+.quoteVisit {
+	font-size: 18px;
+}
+/*  */
+.header2 {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 32px;
+	font-weight: 400;
+}
+/* parent scroll */
+.containerScroll {
+	background-color: pink;
+	/*  */
+	height: 480px;
+	display: flex;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+/* card */
+.containerScrollCard {
+	width: 363px;
+	height: 446px;
+	flex-shrink: 0;
+	margin: 20px;
+	border-top-left-radius: 8px;
+}
+/* card img */
+.containerScrollCard img {
+	width: 100%;
+}
+
+/* text Styles */
+.roboto-bold {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.roboto-regular-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
