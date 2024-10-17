@@ -1,6 +1,6 @@
 * {
 	/* box-sizing: border-box; */
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 html {
 	font-family: "Roboto", sans-serif;
@@ -9,6 +9,9 @@ html {
 
 /* hide elements in mobile view */
 .onDesktop__hide {
+	display: none;
+}
+.hideOnMobile {
 	display: none;
 }
 
@@ -85,9 +88,9 @@ header img {
 }
 
 /* parent */
-.quoteFace {
+/* .quoteFace {
 	display: block;
-}
+} */
 .quoteFace img {
 	float: left;
 	margin-top: 25px;
@@ -113,7 +116,6 @@ header img {
 }
 /* parent scroll */
 .containerScroll {
-	background-color: pink;
 	/*  */
 	height: 480px;
 	display: flex;
@@ -349,12 +351,38 @@ a:visited {
 	.challengesBtn__desktop__orange {
 		display: block;
 		background-color: #e3170a;
+		color: white;
 		border-radius: 5px;
 		border: none;
 		font-size: 1rem;
 		/* size */
 		height: 66px;
 		width: 308px;
+		margin-left: 20px;
+		font-weight: 700;
+	}
+	.challengesLink.challengesLink.hide__element {
+		display: none;
+	}
+	/* img and button */
+	.hackerImg {
+		position: relative;
+	}
+
+	.challengesBtn_img {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 0;
+		transform: translateY(-40px);
+		gap: 20px;
+	}
+	/* img and button end. */
+	.quote {
+		display: flex;
+	}
+	.quoteFace {
+		display: block;
 	}
 }
 
