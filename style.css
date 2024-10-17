@@ -120,6 +120,7 @@ header img {
 	height: 480px;
 	display: flex;
 	overflow-x: scroll;
+	overflow-y: hidden;
 	gap: 1px;
 	margin-left: 20px;
 }
@@ -220,6 +221,9 @@ header img {
 	font-size: 1.17rem;
 	font-weight: 400;
 }
+.hackerBio span {
+	width: 440px;
+}
 
 .hackerBioBtn {
 	width: 13rem;
@@ -315,8 +319,10 @@ a:visited {
 
 @media screen and (min-width: 1200px) {
 	body {
-		width: 100%;
+		max-width: 1280px; /* Limit the website width */
+		margin: 0 auto; /* Center the website content */
 	}
+
 	/* header */
 	.nav {
 		display: flex;
@@ -378,11 +384,33 @@ a:visited {
 		gap: 20px;
 	}
 	/* img and button end. */
+
 	.quote {
 		display: flex;
+		justify-content: center;
 	}
 	.quoteFace {
 		display: block;
+		width: 600px;
+	}
+	/*  */
+	.header2 {
+		font-size: 1.5rem;
+	}
+	/*  */
+	.cardPeople {
+		margin-left: 100px;
+	}
+	/* challengeBtn_sidebyside */
+	.challenges.challengeBtn__sidebyside {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin: 60px;
+	}
+	/*  */
+	.hackerBio span {
+		width: 620px;
 	}
 }
 
