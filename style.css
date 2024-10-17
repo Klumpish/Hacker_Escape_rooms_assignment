@@ -3,6 +3,11 @@ html {
 	/* font-size: 24px; */
 }
 
+/* hide elements in mobile view */
+.desktop {
+	display: none;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -293,7 +298,13 @@ li a:visited {
 	margin-bottom: 68px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
+	body {
+		width: 100%;
+	}
+	header {
+		height: 216px;
+	}
 }
 
 /* 400 */
