@@ -1,6 +1,6 @@
 html {
 	font-family: "Roboto", sans-serif;
-	/* font-size: 24px; */
+	font-size: 24px;
 }
 
 /* hide elements in mobile view */
@@ -36,7 +36,7 @@ header img {
 	top: 25px;
 	left: 168px;
 	line-height: 28.13px;
-	font-size: 24px;
+	font-size: 1rem;
 	margin-left: 10px;
 	margin-top: 25px;
 }
@@ -54,14 +54,14 @@ header img {
 	background-color: #8acfe5;
 	border-radius: 5px;
 	border: none;
-	font-size: 24px;
+	font-size: 1rem;
 	/* size */
 	height: 66px;
 	width: 308px;
 }
 .challenges .challengesLink {
 	color: rgba(54, 118, 157, 1);
-	font-size: 16px;
+	font-size: 0.67rem;
 	margin-bottom: 30px;
 	margin-top: 30;
 
@@ -85,24 +85,24 @@ header img {
 }
 
 .quoteText {
-	font-size: 24px;
+	font-size: 1rem;
 	margin-right: 24px;
 	margin-bottom: 10px;
 }
 .quoteVisit {
-	font-size: 18px;
+	font-size: 0.75rem;
 }
 /*  */
 .header2 {
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 32px;
+	font-size: 1.33rem;
 	font-weight: 400;
 }
 /* parent scroll */
 .containerScroll {
-	/* background-color: pink; */
+	background-color: pink;
 	/*  */
 	height: 480px;
 	display: flex;
@@ -131,8 +131,7 @@ header img {
 }
 /* card text */
 .cardText {
-	font-size: 28px;
-	font-family: "Roboto";
+	font-size: 1.17rem;
 	font-weight: 400;
 
 	margin-top: 0;
@@ -153,16 +152,18 @@ header img {
 .cardStars p {
 	margin-top: 0;
 	padding-left: 10px;
-	font-size: 14px;
+	font-size: 0.69rem;
 	font-family: "Roboto";
 	font-weight: 400;
 }
 /*  */
 .cardInfo {
-	font-size: 18px;
+	font-size: 0.75rem;
 	font-family: "Roboto";
 	font-weight: 400;
-	width: 328px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5px;
