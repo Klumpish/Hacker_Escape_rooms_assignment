@@ -156,12 +156,12 @@ header img {
 /* cardStars */
 .cardStars {
 	display: flex;
-	margin-left: 10px;
+	margin-left: 18px;
+	gap: 5px;
 }
 .cardStars img {
 	width: 15px;
 	height: 15px;
-	padding-left: 8px;
 }
 .cardStars p {
 	margin-top: 0;
