@@ -1,5 +1,5 @@
 * {
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 	/* outline: 1px solid red; */
 }
 html {
@@ -15,10 +15,10 @@ html {
 	display: none;
 }
 
-img {
+/* img {
 	max-width: 100%;
 	height: auto;
-}
+} */
 
 body {
 	display: flex;
@@ -411,6 +411,53 @@ a:visited {
 	/*  */
 	.hackerBio span {
 		width: 620px;
+	}
+	/* grid2x2 */
+	.grid_2x2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		height: 800px;
+	}
+	.col1 .hackerPointing {
+		grid-column: 1;
+		grid-row: 1;
+		/*  */
+		height: 400px;
+		object-fit: cover;
+	}
+	.col2 {
+		grid-column: 2;
+		grid-row: 1;
+		padding: 0;
+	}
+	.col2 p {
+		margin-right: auto;
+		margin-left: auto;
+		width: 420px;
+	}
+	.col2 span {
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30px;
+		width: 420px;
+	}
+	.col2 .infoBtn {
+		margin-left: 105px;
+	}
+
+	.col3 {
+		grid-column: 1;
+		grid-row: 2;
+		/*  */
+	}
+	.col4 .hackerThinking {
+		grid-column: 2;
+		grid-row: 2;
+		/*  */
+		height: 400px;
+		object-fit: cover;
 	}
 }
 
