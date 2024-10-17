@@ -270,12 +270,22 @@ footer p {
 
 footer ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 li {
+	/* font */
 	font-size: 18px;
 	font-weight: 400;
 	font-family: "Roboto";
+}
+li a:link {
+	color: white;
+	text-decoration: none;
+}
+
+li a:visited {
+	color: white;
 }
 
 .lastItem {
