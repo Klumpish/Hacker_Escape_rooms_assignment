@@ -13,15 +13,24 @@
 	</head>
 	<body>
 		<header>
-			<img src="./img/Logo.png" alt="Logo" />
-			<h1 class="logoText">Hacker Escape Rooms</h1>
+			<div class="header">
+				<img src="./img/Logo.png" alt="Logo" />
+				<h1 class="logoText">Hacker Escape Rooms</h1>
+			</div>
+				<nav class="nav onDesktop__hide">
+					<a href="">Play online </a>
+					<a href="">Play on-site</a>
+					<a href="">The Story</a>
+					<a href="">Contact Us</a>
+				</na>
 		</header>
 		<div class="hackerImg">
 			<img src="./img/hacker.png" alt="Hacker" />
 		</div>
 		<div class="challenges">
-			<button class="challengesBtn roboto-bold">On-Site Challenges</button>
-			<a class="challengesLink roboto-bold" href="http://">Online challenges</a>
+			<button class="challengesBtn roboto-bold challengesBtn__desktop__blue">On-Site Challenges</button>
+			<button class="challengesBtn__desktop__orange">Online challenges</button>
+			<a class="challengesLink roboto-bold mobileShow" href="http://">Online challenges</a>
 		</div>
 		<div class="quoteFace">
 			<img src="./img/quoteFace.png" alt="profile-pic" />
@@ -146,7 +155,7 @@
 				</ul>
 
 				<ul class="footerLink">
-					<li><a href=""> Play online </a></li>
+					<li><a href="">Play online </a></li>
 					<li><a href="">Play on-site</a></li>
 				</ul>
 			</div>

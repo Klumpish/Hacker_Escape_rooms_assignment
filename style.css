@@ -1,11 +1,20 @@
+* {
+	/* box-sizing: border-box; */
+	outline: 1px solid red;
+}
 html {
 	font-family: "Roboto", sans-serif;
 	font-size: 24px;
 }
 
 /* hide elements in mobile view */
-.desktop {
+.onDesktop__hide {
 	display: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 body {
@@ -15,8 +24,10 @@ body {
 }
 /* parent */
 header {
-	display: flex;
 	background-color: rgba(1, 24, 39, 1);
+}
+.header {
+	display: flex;
 	/* size */
 	height: 144px;
 	width: 100%;
@@ -153,13 +164,11 @@ header img {
 	margin-top: 0;
 	padding-left: 10px;
 	font-size: 0.69rem;
-	font-family: "Roboto";
 	font-weight: 400;
 }
 /*  */
 .cardInfo {
 	font-size: 0.75rem;
-	font-family: "Roboto";
 	font-weight: 400;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -178,11 +187,13 @@ header img {
 .cardBtn {
 	background-color: rgba(227, 23, 10, 1);
 	color: rgba(255, 255, 255, 1);
-	font-size: 16px;
+	font-size: 0.67rem;
 	font-family: "Roboto";
 	font-weight: 700;
-	width: 179.28px;
-	height: 44px;
+
+	padding: 1em 2em;
+	/* width: 179.28px; */
+	/* height: 44px; */
 
 	border-radius: 8px;
 	margin-right: 20px;
@@ -203,18 +214,18 @@ header img {
 	background-color: rgba(1, 24, 39, 1);
 	color: rgba(255, 255, 255, 1);
 	width: 100%;
-	font-family: "Roboto";
-	font-size: 28px;
+
+	font-size: 1.17rem;
 	font-weight: 400;
 }
 
 .hackerBioBtn {
-	width: 308px;
-	height: 66px;
+	width: 13rem;
+	height: 3rem;
 
+	border-radius: 4px;
 	cursor: pointer;
-	font-family: "roboto";
-	font-size: 24px;
+	font-size: 1rem;
 	font-weight: 700;
 	background-color: transparent;
 	color: rgba(138, 207, 229, 1);
@@ -223,8 +234,9 @@ header img {
 }
 
 .picture {
-	height: 300px;
-	width: 100%;
+	/* height: 300px; */
+	max-width: 100%;
+	height: auto;
 }
 /* booking */
 .infoDump {
@@ -286,12 +298,12 @@ li {
 	font-weight: 400;
 	font-family: "Roboto";
 }
-li a:link {
+a:link {
 	color: white;
 	text-decoration: none;
 }
 
-li a:visited {
+a:visited {
 	color: white;
 }
 
@@ -303,8 +315,46 @@ li a:visited {
 	body {
 		width: 100%;
 	}
-	header {
+	/* header */
+	.nav {
+		display: flex;
+		align-items: end;
+		color: white;
+		justify-content: space-evenly;
+		font-size: 1rem;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.logoText {
+		width: auto;
+		font-size: 1.67rem;
+		padding-top: 50px;
+	}
+
+	.header {
 		height: 216px;
+	}
+	/*challangebtn  */
+
+	.challengesBtn__desktop__blue {
+		display: block;
+		background-color: #8acfe5;
+		border-radius: 5px;
+		border: none;
+		font-size: 1rem;
+		/* size */
+		height: 66px;
+		width: 308px;
+	}
+	.challengesBtn__desktop__orange {
+		display: block;
+		background-color: #e3170a;
+		border-radius: 5px;
+		border: none;
+		font-size: 1rem;
+		/* size */
+		height: 66px;
+		width: 308px;
 	}
 }
 
