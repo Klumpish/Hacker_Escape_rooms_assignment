@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	/* outline: 1px solid red; */
+	max-width: 100%;
 }
 html {
 	font-family: "Roboto", sans-serif;
@@ -15,15 +16,19 @@ html {
 	display: none;
 }
 
-/* img {
-	max-width: 100%;
-	height: auto;
-} */
+/* img,
+div,
+p {
+	max-width: 100%;  Ensure elements don't exceed the body width 
+} 
+*/
 
 body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	/* width: 480px;
+	overflow-x: hidden; */
 }
 /* parent */
 header {
@@ -88,9 +93,10 @@ header img {
 }
 
 /* parent */
-/* .quoteFace {
-	display: block;
-} */
+.quote {
+	display: flex;
+	justify-content: center;
+}
 .quoteFace img {
 	float: left;
 	margin-top: 25px;
@@ -102,6 +108,7 @@ header img {
 	font-size: 1rem;
 	margin-right: 24px;
 	margin-bottom: 10px;
+	max-width: 440px;
 }
 .quoteVisit {
 	font-size: 0.75rem;
@@ -323,10 +330,14 @@ a:visited {
 .lastItem {
 	margin-bottom: 68px;
 }
+/* 1200px
+1280px */
 
-@media screen and (min-width: 1200px) {
+/* add media query 768px */
+
+@media screen and (min-width: 980px) {
 	body {
-		max-width: 1280px; /* Limit the website width */
+		max-width: 1080px; /* Limit the website width */
 		margin: 0 auto; /* Center the website content */
 	}
 
@@ -427,11 +438,13 @@ a:visited {
 		height: 800px;
 		margin-bottom: 150px;
 	}
+	.col1,
 	.col1 .hackerPointing {
+		/* .hackerPointing */
 		grid-column: 1;
 		grid-row: 1;
 		/*  */
-		height: 400px;
+		height: 450px;
 		object-fit: cover;
 	}
 	.col2 {
@@ -464,11 +477,12 @@ a:visited {
 		padding: 0;
 		/*  */
 	}
+	.col4,
 	.col4 .hackerThinking {
 		grid-column: 2;
 		grid-row: 2;
 		/*  */
-		height: 400px;
+		height: 450px;
 		object-fit: cover;
 	}
 	/* footer */
@@ -494,6 +508,19 @@ a:visited {
 	}
 }
 
+@media screen and (min-width: 1330px) {
+	html {
+		display: grid;
+		grid-template-columns: repeat(4 25%);
+		background-color: rgba(1, 24, 39, 1);
+	}
+	body {
+		grid-column: 2 / span 2;
+		background-color: white;
+		max-width: 1480px;
+	}
+}
+
 /* 400 */
 /* text Styles */
 .roboto-bold {
@@ -506,17 +533,4 @@ a:visited {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: italic;
-}
-
-@media screen and (min-width: 1330px) {
-	html {
-		display: grid;
-		grid-template-columns: repeat(4 25%);
-		background-color: rgba(1, 24, 39, 1);
-	}
-	body {
-		grid-column: 2 / span 2;
-		background-color: white;
-		max-width: 1480px;
-	}
 }
