@@ -528,6 +528,10 @@ a:visited {
 	.containerScroll::-webkit-scrollbar {
 		display: none;
 	}
+	.col2 .infoBtn,
+	.col3 .infoBtn {
+		margin-left: 148px;
+	}
 }
 
 /* 400 */
