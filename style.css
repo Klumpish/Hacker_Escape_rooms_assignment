@@ -334,7 +334,18 @@ a:visited {
 /* 1200px
 1280px */
 
-/* add media query 768px */
+/* add media query 600px -980px 
+    center infodump
+*/
+@media screen and (min-width: 600px) and (max-width: 980px) {
+	.grid_2x2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+}
 
 @media screen and (min-width: 980px) {
 	body {
